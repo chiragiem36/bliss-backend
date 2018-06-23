@@ -1,0 +1,710 @@
+2018-06-05T16:31:28.923+0530 I CONTROL  [initandlisten] MongoDB starting : pid=4475 port=27018 dbpath=/home/jarvis/oniv/database/data/db/ 64-bit host=jarvis-PC
+2018-06-05T16:31:28.923+0530 I CONTROL  [initandlisten] db version v3.6.3
+2018-06-05T16:31:28.923+0530 I CONTROL  [initandlisten] git version: 9586e557d54ef70f9ca4b43c26892cd55257e1a5
+2018-06-05T16:31:28.923+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2d 9 Jul 2015
+2018-06-05T16:31:28.923+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-06-05T16:31:28.923+0530 I CONTROL  [initandlisten] modules: none
+2018-06-05T16:31:28.923+0530 I CONTROL  [initandlisten] build environment:
+2018-06-05T16:31:28.923+0530 I CONTROL  [initandlisten]     distmod: ubuntu1404
+2018-06-05T16:31:28.923+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2018-06-05T16:31:28.923+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-06-05T16:31:28.923+0530 I CONTROL  [initandlisten] options: { net: { port: 27018 }, storage: { dbPath: "/home/jarvis/oniv/database/data/db/" } }
+2018-06-05T16:31:28.927+0530 I -        [initandlisten] Detected data files in /home/jarvis/oniv/database/data/db/ created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-06-05T16:31:28.927+0530 I STORAGE  [initandlisten] 
+2018-06-05T16:31:28.927+0530 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-06-05T16:31:28.927+0530 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-06-05T16:31:28.927+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1427M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-06-05T16:31:30.351+0530 I STORAGE  [initandlisten] WiredTiger message [1528196490:351563][4475:0x7f85a7587580], txn-recover: Main recovery loop: starting at 70/1591296
+2018-06-05T16:31:30.481+0530 I STORAGE  [initandlisten] WiredTiger message [1528196490:481347][4475:0x7f85a7587580], txn-recover: Recovering log 70 through 71
+2018-06-05T16:31:30.595+0530 I STORAGE  [initandlisten] WiredTiger message [1528196490:595307][4475:0x7f85a7587580], txn-recover: Recovering log 71 through 71
+2018-06-05T16:31:31.622+0530 I CONTROL  [initandlisten] 
+2018-06-05T16:31:31.622+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-06-05T16:31:31.622+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-06-05T16:31:31.622+0530 I CONTROL  [initandlisten] 
+2018-06-05T16:31:31.622+0530 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-06-05T16:31:31.622+0530 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-06-05T16:31:31.622+0530 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-06-05T16:31:31.622+0530 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-06-05T16:31:31.622+0530 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-06-05T16:31:31.622+0530 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-06-05T16:31:31.622+0530 I CONTROL  [initandlisten] 
+2018-06-05T16:31:31.622+0530 I CONTROL  [initandlisten] 
+2018-06-05T16:31:31.622+0530 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2018-06-05T16:31:31.622+0530 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2018-06-05T16:31:31.622+0530 I CONTROL  [initandlisten] 
+2018-06-05T16:31:31.719+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/home/jarvis/oniv/database/data/db/diagnostic.data'
+2018-06-05T16:31:31.719+0530 I NETWORK  [initandlisten] waiting for connections on port 27018
+2018-06-05T16:31:36.554+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36118 #1 (1 connection now open)
+2018-06-05T16:31:36.554+0530 I NETWORK  [conn1] received client metadata from 127.0.0.1:36118 conn: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.3" }, os: { type: "Linux", name: "Deepin", architecture: "x86_64", version: "15.5" } }
+2018-06-05T16:47:05.220+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36272 #2 (2 connections now open)
+2018-06-05T16:47:05.333+0530 I NETWORK  [conn2] received client metadata from 127.0.0.1:36272 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:48:01.117+0530 I NETWORK  [conn2] end connection 127.0.0.1:36272 (1 connection now open)
+2018-06-05T16:48:02.855+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36282 #3 (2 connections now open)
+2018-06-05T16:48:02.861+0530 I NETWORK  [conn3] received client metadata from 127.0.0.1:36282 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:48:10.039+0530 I NETWORK  [conn3] end connection 127.0.0.1:36282 (1 connection now open)
+2018-06-05T16:49:58.942+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36288 #4 (2 connections now open)
+2018-06-05T16:49:58.951+0530 I NETWORK  [conn4] received client metadata from 127.0.0.1:36288 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:52:30.015+0530 I NETWORK  [conn4] end connection 127.0.0.1:36288 (1 connection now open)
+2018-06-05T16:52:36.303+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36348 #5 (2 connections now open)
+2018-06-05T16:52:36.312+0530 I NETWORK  [conn5] received client metadata from 127.0.0.1:36348 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:52:36.330+0530 I NETWORK  [conn5] end connection 127.0.0.1:36348 (1 connection now open)
+2018-06-05T16:52:37.616+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36350 #6 (2 connections now open)
+2018-06-05T16:52:37.629+0530 I NETWORK  [conn6] received client metadata from 127.0.0.1:36350 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:52:37.644+0530 I NETWORK  [conn6] end connection 127.0.0.1:36350 (1 connection now open)
+2018-06-05T16:52:38.835+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36352 #7 (2 connections now open)
+2018-06-05T16:52:38.844+0530 I NETWORK  [conn7] received client metadata from 127.0.0.1:36352 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:52:38.859+0530 I NETWORK  [conn7] end connection 127.0.0.1:36352 (1 connection now open)
+2018-06-05T16:52:40.047+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36354 #8 (2 connections now open)
+2018-06-05T16:52:40.055+0530 I NETWORK  [conn8] received client metadata from 127.0.0.1:36354 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:52:40.076+0530 I NETWORK  [conn8] end connection 127.0.0.1:36354 (1 connection now open)
+2018-06-05T16:52:41.348+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36356 #9 (2 connections now open)
+2018-06-05T16:52:41.362+0530 I NETWORK  [conn9] received client metadata from 127.0.0.1:36356 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:52:41.371+0530 I NETWORK  [conn9] end connection 127.0.0.1:36356 (1 connection now open)
+2018-06-05T16:52:42.583+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36358 #10 (2 connections now open)
+2018-06-05T16:52:42.594+0530 I NETWORK  [conn10] received client metadata from 127.0.0.1:36358 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:52:42.606+0530 I NETWORK  [conn10] end connection 127.0.0.1:36358 (1 connection now open)
+2018-06-05T16:52:43.818+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36360 #11 (2 connections now open)
+2018-06-05T16:52:43.830+0530 I NETWORK  [conn11] received client metadata from 127.0.0.1:36360 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:52:43.844+0530 I NETWORK  [conn11] end connection 127.0.0.1:36360 (1 connection now open)
+2018-06-05T16:52:45.246+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36362 #12 (2 connections now open)
+2018-06-05T16:52:45.258+0530 I NETWORK  [conn12] received client metadata from 127.0.0.1:36362 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:52:45.270+0530 I NETWORK  [conn12] end connection 127.0.0.1:36362 (1 connection now open)
+2018-06-05T16:52:46.752+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36364 #13 (2 connections now open)
+2018-06-05T16:52:46.763+0530 I NETWORK  [conn13] received client metadata from 127.0.0.1:36364 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:52:46.779+0530 I NETWORK  [conn13] end connection 127.0.0.1:36364 (1 connection now open)
+2018-06-05T16:52:48.118+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36366 #14 (2 connections now open)
+2018-06-05T16:52:48.134+0530 I NETWORK  [conn14] received client metadata from 127.0.0.1:36366 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:52:48.146+0530 I NETWORK  [conn14] end connection 127.0.0.1:36366 (1 connection now open)
+2018-06-05T16:52:49.375+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36368 #15 (2 connections now open)
+2018-06-05T16:52:49.387+0530 I NETWORK  [conn15] received client metadata from 127.0.0.1:36368 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:52:49.399+0530 I NETWORK  [conn15] end connection 127.0.0.1:36368 (1 connection now open)
+2018-06-05T16:52:50.640+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36370 #16 (2 connections now open)
+2018-06-05T16:52:50.647+0530 I NETWORK  [conn16] received client metadata from 127.0.0.1:36370 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:52:50.662+0530 I NETWORK  [conn16] end connection 127.0.0.1:36370 (1 connection now open)
+2018-06-05T16:52:51.882+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36372 #17 (2 connections now open)
+2018-06-05T16:52:51.894+0530 I NETWORK  [conn17] received client metadata from 127.0.0.1:36372 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:52:51.908+0530 I NETWORK  [conn17] end connection 127.0.0.1:36372 (1 connection now open)
+2018-06-05T16:52:53.288+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36374 #18 (2 connections now open)
+2018-06-05T16:52:53.299+0530 I NETWORK  [conn18] received client metadata from 127.0.0.1:36374 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:52:53.316+0530 I NETWORK  [conn18] end connection 127.0.0.1:36374 (1 connection now open)
+2018-06-05T16:52:54.812+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36376 #19 (2 connections now open)
+2018-06-05T16:52:54.819+0530 I NETWORK  [conn19] received client metadata from 127.0.0.1:36376 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:52:54.836+0530 I NETWORK  [conn19] end connection 127.0.0.1:36376 (1 connection now open)
+2018-06-05T16:52:56.403+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36378 #20 (2 connections now open)
+2018-06-05T16:52:56.415+0530 I NETWORK  [conn20] received client metadata from 127.0.0.1:36378 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:52:56.432+0530 I NETWORK  [conn20] end connection 127.0.0.1:36378 (1 connection now open)
+2018-06-05T16:52:57.653+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36380 #21 (2 connections now open)
+2018-06-05T16:52:57.665+0530 I NETWORK  [conn21] received client metadata from 127.0.0.1:36380 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:52:57.675+0530 I NETWORK  [conn21] end connection 127.0.0.1:36380 (1 connection now open)
+2018-06-05T16:52:58.869+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36382 #22 (2 connections now open)
+2018-06-05T16:52:58.876+0530 I NETWORK  [conn22] received client metadata from 127.0.0.1:36382 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:52:58.893+0530 I NETWORK  [conn22] end connection 127.0.0.1:36382 (1 connection now open)
+2018-06-05T16:53:00.074+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36384 #23 (2 connections now open)
+2018-06-05T16:53:00.083+0530 I NETWORK  [conn23] received client metadata from 127.0.0.1:36384 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:53:00.097+0530 I NETWORK  [conn23] end connection 127.0.0.1:36384 (1 connection now open)
+2018-06-05T16:53:01.306+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36386 #24 (2 connections now open)
+2018-06-05T16:53:01.320+0530 I NETWORK  [conn24] received client metadata from 127.0.0.1:36386 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:53:01.333+0530 I NETWORK  [conn24] end connection 127.0.0.1:36386 (1 connection now open)
+2018-06-05T16:53:02.998+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36388 #25 (2 connections now open)
+2018-06-05T16:53:03.011+0530 I NETWORK  [conn25] received client metadata from 127.0.0.1:36388 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:53:03.024+0530 I NETWORK  [conn25] end connection 127.0.0.1:36388 (1 connection now open)
+2018-06-05T16:53:04.560+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36406 #26 (2 connections now open)
+2018-06-05T16:53:04.574+0530 I NETWORK  [conn26] received client metadata from 127.0.0.1:36406 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:53:04.589+0530 I NETWORK  [conn26] end connection 127.0.0.1:36406 (1 connection now open)
+2018-06-05T16:53:06.018+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36412 #27 (2 connections now open)
+2018-06-05T16:53:06.028+0530 I NETWORK  [conn27] received client metadata from 127.0.0.1:36412 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:53:06.053+0530 I NETWORK  [conn27] end connection 127.0.0.1:36412 (1 connection now open)
+2018-06-05T16:53:07.273+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36414 #28 (2 connections now open)
+2018-06-05T16:53:07.281+0530 I NETWORK  [conn28] received client metadata from 127.0.0.1:36414 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:53:07.295+0530 I NETWORK  [conn28] end connection 127.0.0.1:36414 (1 connection now open)
+2018-06-05T16:53:08.516+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36416 #29 (2 connections now open)
+2018-06-05T16:53:08.524+0530 I NETWORK  [conn29] received client metadata from 127.0.0.1:36416 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:53:08.534+0530 I NETWORK  [conn29] end connection 127.0.0.1:36416 (1 connection now open)
+2018-06-05T16:53:09.750+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36418 #30 (2 connections now open)
+2018-06-05T16:53:09.760+0530 I NETWORK  [conn30] received client metadata from 127.0.0.1:36418 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:53:09.775+0530 I NETWORK  [conn30] end connection 127.0.0.1:36418 (1 connection now open)
+2018-06-05T16:53:11.023+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36420 #31 (2 connections now open)
+2018-06-05T16:53:11.033+0530 I NETWORK  [conn31] received client metadata from 127.0.0.1:36420 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:53:11.041+0530 I NETWORK  [conn31] end connection 127.0.0.1:36420 (1 connection now open)
+2018-06-05T16:53:12.322+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36422 #32 (2 connections now open)
+2018-06-05T16:53:12.332+0530 I NETWORK  [conn32] received client metadata from 127.0.0.1:36422 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:53:12.346+0530 I NETWORK  [conn32] end connection 127.0.0.1:36422 (1 connection now open)
+2018-06-05T16:53:13.655+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36424 #33 (2 connections now open)
+2018-06-05T16:53:13.666+0530 I NETWORK  [conn33] received client metadata from 127.0.0.1:36424 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:53:13.678+0530 I NETWORK  [conn33] end connection 127.0.0.1:36424 (1 connection now open)
+2018-06-05T16:53:14.898+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36426 #34 (2 connections now open)
+2018-06-05T16:53:14.911+0530 I NETWORK  [conn34] received client metadata from 127.0.0.1:36426 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:53:14.923+0530 I NETWORK  [conn34] end connection 127.0.0.1:36426 (1 connection now open)
+2018-06-05T16:53:16.139+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36428 #35 (2 connections now open)
+2018-06-05T16:53:16.150+0530 I NETWORK  [conn35] received client metadata from 127.0.0.1:36428 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:53:16.166+0530 I NETWORK  [conn35] end connection 127.0.0.1:36428 (1 connection now open)
+2018-06-05T16:53:17.382+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36430 #36 (2 connections now open)
+2018-06-05T16:53:17.394+0530 I NETWORK  [conn36] received client metadata from 127.0.0.1:36430 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:53:17.408+0530 I NETWORK  [conn36] end connection 127.0.0.1:36430 (1 connection now open)
+2018-06-05T16:53:18.622+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36432 #37 (2 connections now open)
+2018-06-05T16:53:18.635+0530 I NETWORK  [conn37] received client metadata from 127.0.0.1:36432 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:53:18.647+0530 I NETWORK  [conn37] end connection 127.0.0.1:36432 (1 connection now open)
+2018-06-05T16:53:20.032+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36434 #38 (2 connections now open)
+2018-06-05T16:53:20.041+0530 I NETWORK  [conn38] received client metadata from 127.0.0.1:36434 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:53:20.053+0530 I NETWORK  [conn38] end connection 127.0.0.1:36434 (1 connection now open)
+2018-06-05T16:53:21.315+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36436 #39 (2 connections now open)
+2018-06-05T16:53:21.324+0530 I NETWORK  [conn39] received client metadata from 127.0.0.1:36436 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:53:21.335+0530 I NETWORK  [conn39] end connection 127.0.0.1:36436 (1 connection now open)
+2018-06-05T16:53:22.625+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36438 #40 (2 connections now open)
+2018-06-05T16:53:22.635+0530 I NETWORK  [conn40] received client metadata from 127.0.0.1:36438 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:53:22.647+0530 I NETWORK  [conn40] end connection 127.0.0.1:36438 (1 connection now open)
+2018-06-05T16:53:23.855+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36440 #41 (2 connections now open)
+2018-06-05T16:53:23.863+0530 I NETWORK  [conn41] received client metadata from 127.0.0.1:36440 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:53:23.875+0530 I NETWORK  [conn41] end connection 127.0.0.1:36440 (1 connection now open)
+2018-06-05T16:53:25.157+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36442 #42 (2 connections now open)
+2018-06-05T16:53:25.165+0530 I NETWORK  [conn42] received client metadata from 127.0.0.1:36442 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:53:25.175+0530 I NETWORK  [conn42] end connection 127.0.0.1:36442 (1 connection now open)
+2018-06-05T16:53:26.391+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36444 #43 (2 connections now open)
+2018-06-05T16:53:26.399+0530 I NETWORK  [conn43] received client metadata from 127.0.0.1:36444 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T16:53:26.409+0530 I NETWORK  [conn43] end connection 127.0.0.1:36444 (1 connection now open)
+2018-06-05T16:53:36.530+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36446 #44 (2 connections now open)
+2018-06-05T16:53:36.536+0530 I NETWORK  [conn44] received client metadata from 127.0.0.1:36446 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:01:16.587+0530 I NETWORK  [conn44] end connection 127.0.0.1:36446 (1 connection now open)
+2018-06-05T17:01:23.142+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:37232 #45 (2 connections now open)
+2018-06-05T17:01:23.155+0530 I NETWORK  [conn45] received client metadata from 127.0.0.1:37232 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:01:23.194+0530 I NETWORK  [conn45] end connection 127.0.0.1:37232 (1 connection now open)
+2018-06-05T17:01:24.406+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:37242 #46 (2 connections now open)
+2018-06-05T17:01:24.415+0530 I NETWORK  [conn46] received client metadata from 127.0.0.1:37242 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:01:24.429+0530 I NETWORK  [conn46] end connection 127.0.0.1:37242 (1 connection now open)
+2018-06-05T17:01:25.735+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:37252 #47 (2 connections now open)
+2018-06-05T17:01:25.745+0530 I NETWORK  [conn47] received client metadata from 127.0.0.1:37252 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:01:25.757+0530 I NETWORK  [conn47] end connection 127.0.0.1:37252 (1 connection now open)
+2018-06-05T17:01:26.980+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:37270 #48 (2 connections now open)
+2018-06-05T17:01:26.990+0530 I NETWORK  [conn48] received client metadata from 127.0.0.1:37270 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:01:27.007+0530 I NETWORK  [conn48] end connection 127.0.0.1:37270 (1 connection now open)
+2018-06-05T17:01:28.212+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:37280 #49 (2 connections now open)
+2018-06-05T17:01:28.223+0530 I NETWORK  [conn49] received client metadata from 127.0.0.1:37280 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:01:28.234+0530 I NETWORK  [conn49] end connection 127.0.0.1:37280 (1 connection now open)
+2018-06-05T17:01:29.424+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:37290 #50 (2 connections now open)
+2018-06-05T17:01:29.437+0530 I NETWORK  [conn50] received client metadata from 127.0.0.1:37290 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:01:29.453+0530 I NETWORK  [conn50] end connection 127.0.0.1:37290 (1 connection now open)
+2018-06-05T17:01:30.653+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:37300 #51 (2 connections now open)
+2018-06-05T17:01:30.663+0530 I NETWORK  [conn51] received client metadata from 127.0.0.1:37300 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:01:30.676+0530 I NETWORK  [conn51] end connection 127.0.0.1:37300 (1 connection now open)
+2018-06-05T17:01:31.870+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:37310 #52 (2 connections now open)
+2018-06-05T17:01:31.886+0530 I NETWORK  [conn52] received client metadata from 127.0.0.1:37310 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:01:31.905+0530 I NETWORK  [conn52] end connection 127.0.0.1:37310 (1 connection now open)
+2018-06-05T17:01:33.172+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:37328 #53 (2 connections now open)
+2018-06-05T17:01:33.184+0530 I NETWORK  [conn53] received client metadata from 127.0.0.1:37328 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:01:33.214+0530 I NETWORK  [conn53] end connection 127.0.0.1:37328 (1 connection now open)
+2018-06-05T17:01:34.611+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:37338 #54 (2 connections now open)
+2018-06-05T17:01:34.625+0530 I NETWORK  [conn54] received client metadata from 127.0.0.1:37338 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:01:34.643+0530 I NETWORK  [conn54] end connection 127.0.0.1:37338 (1 connection now open)
+2018-06-05T17:01:36.111+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:37356 #55 (2 connections now open)
+2018-06-05T17:01:36.120+0530 I NETWORK  [conn55] received client metadata from 127.0.0.1:37356 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:01:36.131+0530 I NETWORK  [conn55] end connection 127.0.0.1:37356 (1 connection now open)
+2018-06-05T17:01:37.409+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:37366 #56 (2 connections now open)
+2018-06-05T17:01:37.418+0530 I NETWORK  [conn56] received client metadata from 127.0.0.1:37366 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:01:37.437+0530 I NETWORK  [conn56] end connection 127.0.0.1:37366 (1 connection now open)
+2018-06-05T17:01:38.698+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:37376 #57 (2 connections now open)
+2018-06-05T17:01:38.705+0530 I NETWORK  [conn57] received client metadata from 127.0.0.1:37376 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:01:38.716+0530 I NETWORK  [conn57] end connection 127.0.0.1:37376 (1 connection now open)
+2018-06-05T17:01:39.998+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:37394 #58 (2 connections now open)
+2018-06-05T17:01:40.010+0530 I NETWORK  [conn58] received client metadata from 127.0.0.1:37394 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:01:40.023+0530 I NETWORK  [conn58] end connection 127.0.0.1:37394 (1 connection now open)
+2018-06-05T17:01:40.867+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:37396 #59 (2 connections now open)
+2018-06-05T17:01:40.875+0530 I NETWORK  [conn59] received client metadata from 127.0.0.1:37396 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:13:24.833+0530 I COMMAND  [conn1] command data.$cmd appName: "MongoDB Shell" command: listCollections { listCollections: 1.0, filter: {}, $db: "data" } numYields:0 reslen:4755 locks:{ Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { R: 1 } } } protocol:op_msg 196ms
+2018-06-05T17:14:21.064+0530 I STORAGE  [conn1] createCollection: data.user with generated UUID: 6ce67711-5e74-4915-b39b-4adddf687ca7
+2018-06-05T17:14:21.289+0530 I COMMAND  [conn1] command data.user appName: "MongoDB Shell" command: insert { insert: "user", ordered: true, $db: "data" } ninserted:1 keysInserted:1 numYields:0 reslen:29 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_msg 267ms
+2018-06-05T17:15:10.409+0530 I NETWORK  [conn59] end connection 127.0.0.1:37396 (1 connection now open)
+2018-06-05T17:15:11.767+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:43948 #60 (2 connections now open)
+2018-06-05T17:15:11.776+0530 I NETWORK  [conn60] received client metadata from 127.0.0.1:43948 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:15:11.791+0530 I NETWORK  [conn60] end connection 127.0.0.1:43948 (1 connection now open)
+2018-06-05T17:15:12.237+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:43958 #61 (2 connections now open)
+2018-06-05T17:15:12.253+0530 I NETWORK  [conn61] received client metadata from 127.0.0.1:43958 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:16:36.235+0530 I NETWORK  [conn61] end connection 127.0.0.1:43958 (1 connection now open)
+2018-06-05T17:16:47.462+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:44732 #62 (2 connections now open)
+2018-06-05T17:16:47.475+0530 I NETWORK  [conn62] received client metadata from 127.0.0.1:44732 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:16:47.486+0530 I NETWORK  [conn62] end connection 127.0.0.1:44732 (1 connection now open)
+2018-06-05T17:16:58.693+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:44822 #63 (2 connections now open)
+2018-06-05T17:16:58.706+0530 I NETWORK  [conn63] received client metadata from 127.0.0.1:44822 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:16:58.716+0530 I NETWORK  [conn63] end connection 127.0.0.1:44822 (1 connection now open)
+2018-06-05T17:17:13.657+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:44956 #64 (2 connections now open)
+2018-06-05T17:17:13.667+0530 I NETWORK  [conn64] received client metadata from 127.0.0.1:44956 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:18:29.331+0530 I NETWORK  [conn64] end connection 127.0.0.1:44956 (1 connection now open)
+2018-06-05T17:18:43.792+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:45704 #65 (2 connections now open)
+2018-06-05T17:18:43.804+0530 I NETWORK  [conn65] received client metadata from 127.0.0.1:45704 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:21:00.368+0530 I NETWORK  [conn65] end connection 127.0.0.1:45704 (1 connection now open)
+2018-06-05T17:21:03.659+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:46842 #66 (2 connections now open)
+2018-06-05T17:21:03.665+0530 I NETWORK  [conn66] received client metadata from 127.0.0.1:46842 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:29:07.445+0530 I NETWORK  [conn66] end connection 127.0.0.1:46842 (1 connection now open)
+2018-06-05T17:29:09.015+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:50736 #67 (2 connections now open)
+2018-06-05T17:29:09.022+0530 I NETWORK  [conn67] received client metadata from 127.0.0.1:50736 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:33:50.010+0530 I NETWORK  [conn67] end connection 127.0.0.1:50736 (1 connection now open)
+2018-06-05T17:33:56.772+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:53046 #68 (2 connections now open)
+2018-06-05T17:33:56.779+0530 I NETWORK  [conn68] received client metadata from 127.0.0.1:53046 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:34:41.605+0530 I NETWORK  [conn68] end connection 127.0.0.1:53046 (1 connection now open)
+2018-06-05T17:34:43.086+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:53428 #69 (2 connections now open)
+2018-06-05T17:34:43.093+0530 I NETWORK  [conn69] received client metadata from 127.0.0.1:53428 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:35:04.073+0530 I NETWORK  [conn69] end connection 127.0.0.1:53428 (1 connection now open)
+2018-06-05T17:35:05.770+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:53614 #70 (2 connections now open)
+2018-06-05T17:35:05.777+0530 I NETWORK  [conn70] received client metadata from 127.0.0.1:53614 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:35:20.985+0530 I NETWORK  [conn70] end connection 127.0.0.1:53614 (1 connection now open)
+2018-06-05T17:37:07.496+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54584 #71 (2 connections now open)
+2018-06-05T17:37:07.503+0530 I NETWORK  [conn71] received client metadata from 127.0.0.1:54584 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:38:02.342+0530 I NETWORK  [conn71] end connection 127.0.0.1:54584 (1 connection now open)
+2018-06-05T17:38:41.474+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55338 #72 (2 connections now open)
+2018-06-05T17:38:41.481+0530 I NETWORK  [conn72] received client metadata from 127.0.0.1:55338 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:38:41.502+0530 I NETWORK  [conn72] end connection 127.0.0.1:55338 (1 connection now open)
+2018-06-05T17:38:49.199+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55404 #73 (2 connections now open)
+2018-06-05T17:38:49.206+0530 I NETWORK  [conn73] received client metadata from 127.0.0.1:55404 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T17:40:09.322+0530 I NETWORK  [conn73] end connection 127.0.0.1:55404 (1 connection now open)
+2018-06-05T18:21:54.098+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:44138 #74 (2 connections now open)
+2018-06-05T18:21:54.105+0530 I NETWORK  [conn74] received client metadata from 127.0.0.1:44138 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:33:57.381+0530 I NETWORK  [conn74] end connection 127.0.0.1:44138 (1 connection now open)
+2018-06-05T18:33:58.933+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:49938 #75 (2 connections now open)
+2018-06-05T18:33:58.940+0530 I NETWORK  [conn75] received client metadata from 127.0.0.1:49938 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:34:17.804+0530 I NETWORK  [conn75] end connection 127.0.0.1:49938 (1 connection now open)
+2018-06-05T18:34:19.410+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:50112 #76 (2 connections now open)
+2018-06-05T18:34:19.417+0530 I NETWORK  [conn76] received client metadata from 127.0.0.1:50112 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:35:58.927+0530 I NETWORK  [conn76] end connection 127.0.0.1:50112 (1 connection now open)
+2018-06-05T18:36:02.427+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:50950 #77 (2 connections now open)
+2018-06-05T18:36:02.434+0530 I NETWORK  [conn77] received client metadata from 127.0.0.1:50950 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:43:29.477+0530 I NETWORK  [conn77] end connection 127.0.0.1:50950 (1 connection now open)
+2018-06-05T18:44:07.843+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54834 #78 (2 connections now open)
+2018-06-05T18:44:07.850+0530 I NETWORK  [conn78] received client metadata from 127.0.0.1:54834 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:44:44.086+0530 I NETWORK  [conn78] end connection 127.0.0.1:54834 (1 connection now open)
+2018-06-05T18:44:47.235+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55150 #79 (2 connections now open)
+2018-06-05T18:44:47.242+0530 I NETWORK  [conn79] received client metadata from 127.0.0.1:55150 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:46:32.452+0530 I NETWORK  [conn79] end connection 127.0.0.1:55150 (1 connection now open)
+2018-06-05T18:46:36.597+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:56026 #80 (2 connections now open)
+2018-06-05T18:46:36.604+0530 I NETWORK  [conn80] received client metadata from 127.0.0.1:56026 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:48:08.950+0530 I NETWORK  [conn80] end connection 127.0.0.1:56026 (1 connection now open)
+2018-06-05T18:48:11.532+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:56790 #81 (2 connections now open)
+2018-06-05T18:48:11.539+0530 I NETWORK  [conn81] received client metadata from 127.0.0.1:56790 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:48:32.319+0530 I NETWORK  [conn81] end connection 127.0.0.1:56790 (1 connection now open)
+2018-06-05T18:48:35.467+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:56996 #82 (2 connections now open)
+2018-06-05T18:48:35.474+0530 I NETWORK  [conn82] received client metadata from 127.0.0.1:56996 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:48:39.314+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:57024 #83 (3 connections now open)
+2018-06-05T18:48:39.376+0530 I NETWORK  [conn83] received client metadata from 127.0.0.1:57024 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:48:40.331+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:57036 #84 (4 connections now open)
+2018-06-05T18:48:40.331+0530 I NETWORK  [conn84] received client metadata from 127.0.0.1:57036 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:49:39.399+0530 I NETWORK  [conn84] end connection 127.0.0.1:57036 (3 connections now open)
+2018-06-05T18:49:39.399+0530 I NETWORK  [conn83] end connection 127.0.0.1:57024 (2 connections now open)
+2018-06-05T18:49:39.400+0530 I NETWORK  [conn82] end connection 127.0.0.1:56996 (1 connection now open)
+2018-06-05T18:49:57.087+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:57654 #85 (2 connections now open)
+2018-06-05T18:49:57.094+0530 I NETWORK  [conn85] received client metadata from 127.0.0.1:57654 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:50:14.058+0530 I NETWORK  [conn85] end connection 127.0.0.1:57654 (1 connection now open)
+2018-06-05T18:50:38.804+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:57994 #86 (2 connections now open)
+2018-06-05T18:50:38.811+0530 I NETWORK  [conn86] received client metadata from 127.0.0.1:57994 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:51:14.468+0530 I NETWORK  [conn86] end connection 127.0.0.1:57994 (1 connection now open)
+2018-06-05T18:51:18.224+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:58310 #87 (2 connections now open)
+2018-06-05T18:51:18.231+0530 I NETWORK  [conn87] received client metadata from 127.0.0.1:58310 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:51:30.591+0530 I NETWORK  [conn87] end connection 127.0.0.1:58310 (1 connection now open)
+2018-06-05T18:51:33.303+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:58434 #88 (2 connections now open)
+2018-06-05T18:51:33.309+0530 I NETWORK  [conn88] received client metadata from 127.0.0.1:58434 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:51:37.234+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:58470 #89 (3 connections now open)
+2018-06-05T18:51:37.235+0530 I NETWORK  [conn89] received client metadata from 127.0.0.1:58470 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:51:37.952+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:58482 #90 (4 connections now open)
+2018-06-05T18:51:37.952+0530 I NETWORK  [conn90] received client metadata from 127.0.0.1:58482 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:51:38.145+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:58486 #91 (5 connections now open)
+2018-06-05T18:51:38.146+0530 I NETWORK  [conn91] received client metadata from 127.0.0.1:58486 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:51:38.347+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:58490 #92 (6 connections now open)
+2018-06-05T18:51:38.347+0530 I NETWORK  [conn92] received client metadata from 127.0.0.1:58490 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:51:38.518+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:58494 #93 (7 connections now open)
+2018-06-05T18:51:38.518+0530 I NETWORK  [conn93] received client metadata from 127.0.0.1:58494 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:51:38.706+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:58506 #94 (8 connections now open)
+2018-06-05T18:51:38.707+0530 I NETWORK  [conn94] received client metadata from 127.0.0.1:58506 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:51:42.215+0530 I NETWORK  [conn1] end connection 127.0.0.1:36118 (7 connections now open)
+2018-06-05T18:51:56.414+0530 I NETWORK  [conn94] end connection 127.0.0.1:58506 (6 connections now open)
+2018-06-05T18:51:56.414+0530 I NETWORK  [conn92] end connection 127.0.0.1:58490 (5 connections now open)
+2018-06-05T18:51:56.415+0530 I NETWORK  [conn88] end connection 127.0.0.1:58434 (2 connections now open)
+2018-06-05T18:51:56.415+0530 I NETWORK  [conn90] end connection 127.0.0.1:58482 (1 connection now open)
+2018-06-05T18:51:56.415+0530 I NETWORK  [conn89] end connection 127.0.0.1:58470 (0 connections now open)
+2018-06-05T18:51:56.414+0530 I NETWORK  [conn93] end connection 127.0.0.1:58494 (4 connections now open)
+2018-06-05T18:51:56.414+0530 I NETWORK  [conn91] end connection 127.0.0.1:58486 (3 connections now open)
+2018-06-05T18:52:01.947+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:58696 #95 (1 connection now open)
+2018-06-05T18:52:01.954+0530 I NETWORK  [conn95] received client metadata from 127.0.0.1:58696 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:52:04.879+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:58724 #96 (2 connections now open)
+2018-06-05T18:52:04.880+0530 I NETWORK  [conn96] received client metadata from 127.0.0.1:58724 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:52:25.218+0530 I NETWORK  [conn96] end connection 127.0.0.1:58724 (1 connection now open)
+2018-06-05T18:52:25.219+0530 I NETWORK  [conn95] end connection 127.0.0.1:58696 (0 connections now open)
+2018-06-05T18:52:29.288+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:58928 #97 (1 connection now open)
+2018-06-05T18:52:29.295+0530 I NETWORK  [conn97] received client metadata from 127.0.0.1:58928 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:52:32.605+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:58956 #98 (2 connections now open)
+2018-06-05T18:52:32.606+0530 I NETWORK  [conn98] received client metadata from 127.0.0.1:58956 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:52:46.875+0530 I NETWORK  [conn98] end connection 127.0.0.1:58956 (1 connection now open)
+2018-06-05T18:52:46.875+0530 I NETWORK  [conn97] end connection 127.0.0.1:58928 (0 connections now open)
+2018-06-05T18:52:50.013+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:59102 #99 (1 connection now open)
+2018-06-05T18:52:50.020+0530 I NETWORK  [conn99] received client metadata from 127.0.0.1:59102 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:52:54.322+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:59138 #100 (2 connections now open)
+2018-06-05T18:52:54.325+0530 I NETWORK  [conn100] received client metadata from 127.0.0.1:59138 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:53:05.161+0530 I NETWORK  [conn100] end connection 127.0.0.1:59138 (1 connection now open)
+2018-06-05T18:53:05.161+0530 I NETWORK  [conn99] end connection 127.0.0.1:59102 (0 connections now open)
+2018-06-05T18:53:06.661+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:59236 #101 (1 connection now open)
+2018-06-05T18:53:06.668+0530 I NETWORK  [conn101] received client metadata from 127.0.0.1:59236 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:53:24.060+0530 I NETWORK  [conn101] end connection 127.0.0.1:59236 (0 connections now open)
+2018-06-05T18:53:25.596+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:59392 #102 (1 connection now open)
+2018-06-05T18:53:25.603+0530 I NETWORK  [conn102] received client metadata from 127.0.0.1:59392 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:53:34.818+0530 I NETWORK  [conn102] end connection 127.0.0.1:59392 (0 connections now open)
+2018-06-05T18:54:29.574+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:59908 #103 (1 connection now open)
+2018-06-05T18:54:29.581+0530 I NETWORK  [conn103] received client metadata from 127.0.0.1:59908 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:54:49.678+0530 I NETWORK  [conn103] end connection 127.0.0.1:59908 (0 connections now open)
+2018-06-05T18:54:51.169+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:60088 #104 (1 connection now open)
+2018-06-05T18:54:51.176+0530 I NETWORK  [conn104] received client metadata from 127.0.0.1:60088 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:55:46.667+0530 I NETWORK  [conn104] end connection 127.0.0.1:60088 (0 connections now open)
+2018-06-05T18:55:50.006+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:60556 #105 (1 connection now open)
+2018-06-05T18:55:50.013+0530 I NETWORK  [conn105] received client metadata from 127.0.0.1:60556 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:55:59.162+0530 I NETWORK  [conn105] end connection 127.0.0.1:60556 (0 connections now open)
+2018-06-05T18:56:00.986+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:60648 #106 (1 connection now open)
+2018-06-05T18:56:00.993+0530 I NETWORK  [conn106] received client metadata from 127.0.0.1:60648 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:56:03.069+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:60668 #107 (2 connections now open)
+2018-06-05T18:56:03.070+0530 I NETWORK  [conn107] received client metadata from 127.0.0.1:60668 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T18:56:03.073+0530 I NETWORK  [conn107] end connection 127.0.0.1:60668 (1 connection now open)
+2018-06-05T18:56:03.080+0530 I NETWORK  [conn106] end connection 127.0.0.1:60648 (0 connections now open)
+2018-06-05T19:03:10.963+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:35854 #108 (1 connection now open)
+2018-06-05T19:03:10.970+0530 I NETWORK  [conn108] received client metadata from 127.0.0.1:35854 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T19:03:13.970+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:35882 #109 (2 connections now open)
+2018-06-05T19:03:13.971+0530 I NETWORK  [conn109] received client metadata from 127.0.0.1:35882 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T19:03:13.975+0530 I NETWORK  [conn109] end connection 127.0.0.1:35882 (1 connection now open)
+2018-06-05T19:03:13.990+0530 I NETWORK  [conn108] end connection 127.0.0.1:35854 (0 connections now open)
+2018-06-05T19:04:25.483+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36460 #110 (1 connection now open)
+2018-06-05T19:04:25.490+0530 I NETWORK  [conn110] received client metadata from 127.0.0.1:36460 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T19:04:28.008+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36480 #111 (2 connections now open)
+2018-06-05T19:04:28.009+0530 I NETWORK  [conn111] received client metadata from 127.0.0.1:36480 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T19:04:28.012+0530 I NETWORK  [conn111] end connection 127.0.0.1:36480 (1 connection now open)
+2018-06-05T19:04:28.023+0530 I NETWORK  [conn110] end connection 127.0.0.1:36460 (0 connections now open)
+2018-06-05T19:12:49.122+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:40482 #112 (1 connection now open)
+2018-06-05T19:12:49.129+0530 I NETWORK  [conn112] received client metadata from 127.0.0.1:40482 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T19:13:07.044+0530 I NETWORK  [conn112] end connection 127.0.0.1:40482 (0 connections now open)
+2018-06-05T19:13:10.694+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:40662 #113 (1 connection now open)
+2018-06-05T19:13:10.701+0530 I NETWORK  [conn113] received client metadata from 127.0.0.1:40662 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T19:13:28.001+0530 I NETWORK  [conn113] end connection 127.0.0.1:40662 (0 connections now open)
+2018-06-05T19:13:29.811+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:40818 #114 (1 connection now open)
+2018-06-05T19:13:29.823+0530 I NETWORK  [conn114] received client metadata from 127.0.0.1:40818 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T19:13:36.712+0530 I NETWORK  [conn114] end connection 127.0.0.1:40818 (0 connections now open)
+2018-06-05T19:13:40.153+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:40902 #115 (1 connection now open)
+2018-06-05T19:13:40.160+0530 I NETWORK  [conn115] received client metadata from 127.0.0.1:40902 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T19:14:23.679+0530 I NETWORK  [conn115] end connection 127.0.0.1:40902 (0 connections now open)
+2018-06-05T19:14:25.547+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:41274 #116 (1 connection now open)
+2018-06-05T19:14:25.554+0530 I NETWORK  [conn116] received client metadata from 127.0.0.1:41274 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T19:18:52.467+0530 I NETWORK  [conn116] end connection 127.0.0.1:41274 (0 connections now open)
+2018-06-05T19:18:54.133+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:43420 #117 (1 connection now open)
+2018-06-05T19:18:54.140+0530 I NETWORK  [conn117] received client metadata from 127.0.0.1:43420 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T19:19:44.404+0530 I NETWORK  [conn117] end connection 127.0.0.1:43420 (0 connections now open)
+2018-06-05T19:19:45.857+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:43832 #118 (1 connection now open)
+2018-06-05T19:19:45.864+0530 I NETWORK  [conn118] received client metadata from 127.0.0.1:43832 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T19:19:56.770+0530 I NETWORK  [conn118] end connection 127.0.0.1:43832 (0 connections now open)
+2018-06-05T19:20:17.663+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:44092 #119 (1 connection now open)
+2018-06-05T19:20:17.670+0530 I NETWORK  [conn119] received client metadata from 127.0.0.1:44092 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T19:21:21.202+0530 I NETWORK  [conn119] end connection 127.0.0.1:44092 (0 connections now open)
+2018-06-05T19:21:24.026+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:44624 #120 (1 connection now open)
+2018-06-05T19:21:24.033+0530 I NETWORK  [conn120] received client metadata from 127.0.0.1:44624 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T19:21:47.795+0530 I NETWORK  [conn120] end connection 127.0.0.1:44624 (0 connections now open)
+2018-06-05T19:21:51.560+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:44850 #121 (1 connection now open)
+2018-06-05T19:21:51.567+0530 I NETWORK  [conn121] received client metadata from 127.0.0.1:44850 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T19:22:34.205+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:45188 #122 (2 connections now open)
+2018-06-05T19:22:34.205+0530 I NETWORK  [conn122] received client metadata from 127.0.0.1:45188 conn: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.3" }, os: { type: "Linux", name: "Deepin", architecture: "x86_64", version: "15.5" } }
+2018-06-05T19:22:34.385+0530 I COMMAND  [conn122] command admin.$cmd appName: "MongoDB Shell" command: buildInfo { buildinfo: 1.0, $db: "admin" } numYields:0 reslen:1268 locks:{} protocol:op_msg 145ms
+2018-06-05T19:22:53.850+0530 I COMMAND  [conn122] command data.user appName: "MongoDB Shell" command: find { find: "user", filter: {}, $db: "data" } planSummary: COLLSCAN keysExamined:0 docsExamined:1 cursorExhausted:1 numYields:0 nreturned:1 reslen:121 locks:{ Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 1 } }, Collection: { acquireCount: { r: 1 } } } protocol:op_msg 126ms
+2018-06-05T19:23:10.163+0530 I NETWORK  [conn122] end connection 127.0.0.1:45188 (1 connection now open)
+2018-06-05T19:23:13.212+0530 I NETWORK  [conn121] end connection 127.0.0.1:44850 (0 connections now open)
+2018-06-05T19:23:17.069+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:45534 #123 (1 connection now open)
+2018-06-05T19:23:17.076+0530 I NETWORK  [conn123] received client metadata from 127.0.0.1:45534 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T19:24:21.318+0530 I NETWORK  [conn123] end connection 127.0.0.1:45534 (0 connections now open)
+2018-06-05T19:24:24.616+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:46074 #124 (1 connection now open)
+2018-06-05T19:24:24.623+0530 I NETWORK  [conn124] received client metadata from 127.0.0.1:46074 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T19:24:37.070+0530 I NETWORK  [conn124] end connection 127.0.0.1:46074 (0 connections now open)
+2018-06-05T19:24:38.831+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:46196 #125 (1 connection now open)
+2018-06-05T19:24:38.838+0530 I NETWORK  [conn125] received client metadata from 127.0.0.1:46196 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T19:25:12.029+0530 I NETWORK  [conn125] end connection 127.0.0.1:46196 (0 connections now open)
+2018-06-05T19:25:15.334+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:46486 #126 (1 connection now open)
+2018-06-05T19:25:15.341+0530 I NETWORK  [conn126] received client metadata from 127.0.0.1:46486 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T19:42:50.082+0530 I NETWORK  [conn126] end connection 127.0.0.1:46486 (0 connections now open)
+2018-06-05T19:42:57.702+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55582 #127 (1 connection now open)
+2018-06-05T19:42:57.731+0530 I NETWORK  [conn127] received client metadata from 127.0.0.1:55582 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T19:44:31.695+0530 I NETWORK  [conn127] end connection 127.0.0.1:55582 (0 connections now open)
+2018-06-05T19:44:44.606+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:56456 #128 (1 connection now open)
+2018-06-05T19:44:44.616+0530 I NETWORK  [conn128] received client metadata from 127.0.0.1:56456 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T20:00:44.983+0530 I NETWORK  [conn128] end connection 127.0.0.1:56456 (0 connections now open)
+2018-06-05T20:00:51.485+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:35988 #129 (1 connection now open)
+2018-06-05T20:00:51.492+0530 I NETWORK  [conn129] received client metadata from 127.0.0.1:35988 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T20:02:09.983+0530 I NETWORK  [conn129] end connection 127.0.0.1:35988 (0 connections now open)
+2018-06-05T20:02:16.652+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36672 #130 (1 connection now open)
+2018-06-05T20:02:16.659+0530 I NETWORK  [conn130] received client metadata from 127.0.0.1:36672 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T20:02:23.437+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36734 #131 (2 connections now open)
+2018-06-05T20:02:23.437+0530 I NETWORK  [conn131] received client metadata from 127.0.0.1:36734 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T20:02:23.441+0530 I NETWORK  [conn131] end connection 127.0.0.1:36734 (1 connection now open)
+2018-06-05T20:02:23.451+0530 I NETWORK  [conn130] end connection 127.0.0.1:36672 (0 connections now open)
+2018-06-05T20:03:02.478+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:37068 #132 (1 connection now open)
+2018-06-05T20:03:02.485+0530 I NETWORK  [conn132] received client metadata from 127.0.0.1:37068 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T20:04:32.661+0530 I NETWORK  [conn132] end connection 127.0.0.1:37068 (0 connections now open)
+2018-06-05T20:04:36.321+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:37840 #133 (1 connection now open)
+2018-06-05T20:04:36.330+0530 I NETWORK  [conn133] received client metadata from 127.0.0.1:37840 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T20:04:41.857+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:37892 #134 (2 connections now open)
+2018-06-05T20:04:41.858+0530 I NETWORK  [conn134] received client metadata from 127.0.0.1:37892 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-05T20:04:41.861+0530 I NETWORK  [conn134] end connection 127.0.0.1:37892 (1 connection now open)
+2018-06-05T20:04:41.869+0530 I NETWORK  [conn133] end connection 127.0.0.1:37840 (0 connections now open)
+2018-06-06T20:29:09.215+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:39494 #135 (1 connection now open)
+2018-06-06T20:29:09.223+0530 I NETWORK  [conn135] received client metadata from 127.0.0.1:39494 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T20:31:30.700+0530 I NETWORK  [conn135] end connection 127.0.0.1:39494 (0 connections now open)
+2018-06-06T20:31:35.360+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:40498 #136 (1 connection now open)
+2018-06-06T20:31:35.367+0530 I NETWORK  [conn136] received client metadata from 127.0.0.1:40498 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T20:31:55.276+0530 I NETWORK  [conn136] end connection 127.0.0.1:40498 (0 connections now open)
+2018-06-06T20:31:57.250+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:40678 #137 (1 connection now open)
+2018-06-06T20:31:57.257+0530 I NETWORK  [conn137] received client metadata from 127.0.0.1:40678 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T20:32:06.507+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:40754 #138 (2 connections now open)
+2018-06-06T20:32:06.507+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:40756 #139 (3 connections now open)
+2018-06-06T20:32:06.508+0530 I NETWORK  [conn138] received client metadata from 127.0.0.1:40754 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T20:32:06.509+0530 I NETWORK  [conn139] received client metadata from 127.0.0.1:40756 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T20:32:06.511+0530 I NETWORK  [conn138] end connection 127.0.0.1:40754 (2 connections now open)
+2018-06-06T20:32:06.520+0530 I NETWORK  [conn139] end connection 127.0.0.1:40756 (1 connection now open)
+2018-06-06T20:32:06.520+0530 I NETWORK  [conn137] end connection 127.0.0.1:40678 (0 connections now open)
+2018-06-06T20:32:23.984+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:40906 #140 (1 connection now open)
+2018-06-06T20:32:23.991+0530 I NETWORK  [conn140] received client metadata from 127.0.0.1:40906 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T20:46:01.298+0530 I NETWORK  [conn140] end connection 127.0.0.1:40906 (0 connections now open)
+2018-06-06T20:46:05.802+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:47892 #141 (1 connection now open)
+2018-06-06T20:46:05.810+0530 I NETWORK  [conn141] received client metadata from 127.0.0.1:47892 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T20:46:33.822+0530 I NETWORK  [conn141] end connection 127.0.0.1:47892 (0 connections now open)
+2018-06-06T20:48:27.155+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:49036 #142 (1 connection now open)
+2018-06-06T20:48:27.169+0530 I NETWORK  [conn142] received client metadata from 127.0.0.1:49036 conn: { driver: { name: "nodejs", version: "2.2.35" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 2.1.19" }
+2018-06-06T20:48:27.204+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:49038 #143 (2 connections now open)
+2018-06-06T20:48:27.209+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:49040 #144 (3 connections now open)
+2018-06-06T20:48:27.210+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:49042 #145 (4 connections now open)
+2018-06-06T20:48:27.811+0530 I COMMAND  [conn145] command data.activeTests command: find { find: "activeTests", filter: {}, $db: "data" } planSummary: COLLSCAN keysExamined:0 docsExamined:0 cursorExhausted:1 numYields:0 nreturned:0 reslen:104 locks:{ Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 1 } }, Collection: { acquireCount: { r: 1 } } } protocol:op_query 595ms
+2018-06-06T20:48:27.811+0530 I COMMAND  [conn144] command data.scheduledTests command: find { find: "scheduledTests", filter: {}, $db: "data" } planSummary: COLLSCAN keysExamined:0 docsExamined:0 cursorExhausted:1 numYields:0 nreturned:0 reslen:107 locks:{ Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 1 } }, Collection: { acquireCount: { r: 1 } } } protocol:op_query 597ms
+2018-06-06T20:48:27.853+0530 I COMMAND  [conn143] command data.node1 command: find { find: "node1", filter: {}, limit: 1, singleBatch: true, batchSize: 1, $db: "data" } planSummary: COLLSCAN keysExamined:0 docsExamined:1 cursorExhausted:1 numYields:0 nreturned:1 reslen:168 locks:{ Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 1 } }, Collection: { acquireCount: { r: 1 } } } protocol:op_query 648ms
+2018-06-06T20:48:27.940+0530 I COMMAND  [conn142] command data.nodes command: find { find: "nodes", filter: { _id: "active" }, limit: 1, singleBatch: true, batchSize: 1, $db: "data" } planSummary: IDHACK keysExamined:1 docsExamined:1 cursorExhausted:1 numYields:0 nreturned:1 reslen:186 locks:{ Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 1 } }, Collection: { acquireCount: { r: 1 } } } protocol:op_query 740ms
+2018-06-06T20:50:10.818+0530 I NETWORK  [conn145] end connection 127.0.0.1:49042 (3 connections now open)
+2018-06-06T20:50:10.818+0530 I NETWORK  [conn144] end connection 127.0.0.1:49040 (2 connections now open)
+2018-06-06T20:50:10.818+0530 I NETWORK  [conn142] end connection 127.0.0.1:49036 (1 connection now open)
+2018-06-06T20:50:10.819+0530 I NETWORK  [conn143] end connection 127.0.0.1:49038 (0 connections now open)
+2018-06-06T20:50:15.566+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:49962 #146 (1 connection now open)
+2018-06-06T20:50:15.580+0530 I NETWORK  [conn146] received client metadata from 127.0.0.1:49962 conn: { driver: { name: "nodejs", version: "2.2.35" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 2.1.19" }
+2018-06-06T20:50:15.610+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:49964 #147 (2 connections now open)
+2018-06-06T20:50:15.616+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:49966 #148 (3 connections now open)
+2018-06-06T20:50:34.221+0530 I COMMAND  [conn147] command data.notifications command: find { find: "notifications", filter: { _id: "admin@bbps" }, projection: { updates: 1 }, limit: 1, singleBatch: true, batchSize: 1, $db: "data" } planSummary: EOF keysExamined:0 docsExamined:0 cursorExhausted:1 numYields:0 nreturned:0 reslen:106 locks:{ Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 1 } }, Collection: { acquireCount: { r: 1 } } } protocol:op_query 126ms
+2018-06-06T20:50:49.885+0530 I NETWORK  [conn147] end connection 127.0.0.1:49964 (1 connection now open)
+2018-06-06T20:50:49.885+0530 I NETWORK  [conn148] end connection 127.0.0.1:49966 (2 connections now open)
+2018-06-06T20:50:49.885+0530 I NETWORK  [conn146] end connection 127.0.0.1:49962 (0 connections now open)
+2018-06-06T20:51:17.579+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:50478 #149 (1 connection now open)
+2018-06-06T20:51:17.586+0530 I NETWORK  [conn149] received client metadata from 127.0.0.1:50478 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T20:51:17.915+0530 I NETWORK  [conn149] end connection 127.0.0.1:50478 (0 connections now open)
+2018-06-06T20:51:47.259+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:50712 #150 (1 connection now open)
+2018-06-06T20:51:47.267+0530 I NETWORK  [conn150] received client metadata from 127.0.0.1:50712 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T20:51:47.321+0530 I NETWORK  [conn150] end connection 127.0.0.1:50712 (0 connections now open)
+2018-06-06T20:52:12.054+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:50914 #151 (1 connection now open)
+2018-06-06T20:52:12.061+0530 I NETWORK  [conn151] received client metadata from 127.0.0.1:50914 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T20:52:12.100+0530 I NETWORK  [conn151] end connection 127.0.0.1:50914 (0 connections now open)
+2018-06-06T20:53:12.710+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51404 #152 (1 connection now open)
+2018-06-06T20:53:12.717+0530 I NETWORK  [conn152] received client metadata from 127.0.0.1:51404 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T20:54:15.919+0530 I NETWORK  [conn152] end connection 127.0.0.1:51404 (0 connections now open)
+2018-06-06T20:54:17.430+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51932 #153 (1 connection now open)
+2018-06-06T20:54:17.437+0530 I NETWORK  [conn153] received client metadata from 127.0.0.1:51932 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T20:55:33.155+0530 I NETWORK  [conn153] end connection 127.0.0.1:51932 (0 connections now open)
+2018-06-06T20:55:51.499+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52686 #154 (1 connection now open)
+2018-06-06T20:55:51.551+0530 I NETWORK  [conn154] received client metadata from 127.0.0.1:52686 conn: { driver: { name: "nodejs", version: "2.2.35" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 2.1.19" }
+2018-06-06T20:55:51.571+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52688 #155 (2 connections now open)
+2018-06-06T20:55:51.574+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52690 #156 (3 connections now open)
+2018-06-06T20:56:39.906+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:53078 #157 (4 connections now open)
+2018-06-06T20:56:39.914+0530 I NETWORK  [conn157] received client metadata from 127.0.0.1:53078 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T20:57:14.253+0530 I NETWORK  [conn157] end connection 127.0.0.1:53078 (3 connections now open)
+2018-06-06T20:57:16.847+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:53376 #158 (4 connections now open)
+2018-06-06T20:57:16.860+0530 I NETWORK  [conn158] received client metadata from 127.0.0.1:53376 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T20:57:49.163+0530 I NETWORK  [conn158] end connection 127.0.0.1:53376 (3 connections now open)
+2018-06-06T20:57:51.338+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:53658 #159 (4 connections now open)
+2018-06-06T20:57:51.346+0530 I NETWORK  [conn159] received client metadata from 127.0.0.1:53658 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T20:59:13.032+0530 I NETWORK  [conn159] end connection 127.0.0.1:53658 (3 connections now open)
+2018-06-06T20:59:14.776+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54324 #160 (4 connections now open)
+2018-06-06T20:59:14.783+0530 I NETWORK  [conn160] received client metadata from 127.0.0.1:54324 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T20:59:27.470+0530 I NETWORK  [conn160] end connection 127.0.0.1:54324 (3 connections now open)
+2018-06-06T20:59:51.578+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54622 #161 (4 connections now open)
+2018-06-06T20:59:51.585+0530 I NETWORK  [conn161] received client metadata from 127.0.0.1:54622 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T21:00:29.211+0530 I NETWORK  [conn161] end connection 127.0.0.1:54622 (3 connections now open)
+2018-06-06T21:00:39.774+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55008 #162 (4 connections now open)
+2018-06-06T21:00:39.781+0530 I NETWORK  [conn162] received client metadata from 127.0.0.1:55008 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T21:01:12.644+0530 I NETWORK  [conn162] end connection 127.0.0.1:55008 (3 connections now open)
+2018-06-06T21:01:14.371+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55290 #163 (4 connections now open)
+2018-06-06T21:01:14.379+0530 I NETWORK  [conn163] received client metadata from 127.0.0.1:55290 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T21:01:20.397+0530 I NETWORK  [conn163] end connection 127.0.0.1:55290 (3 connections now open)
+2018-06-06T21:01:23.617+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55364 #164 (4 connections now open)
+2018-06-06T21:01:23.624+0530 I NETWORK  [conn164] received client metadata from 127.0.0.1:55364 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T21:01:37.245+0530 I NETWORK  [conn164] end connection 127.0.0.1:55364 (3 connections now open)
+2018-06-06T21:03:19.209+0530 I NETWORK  [conn156] end connection 127.0.0.1:52690 (2 connections now open)
+2018-06-06T21:03:19.209+0530 I NETWORK  [conn155] end connection 127.0.0.1:52688 (1 connection now open)
+2018-06-06T21:03:19.209+0530 I NETWORK  [conn154] end connection 127.0.0.1:52686 (0 connections now open)
+2018-06-06T21:03:22.361+0530 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2018-06-06T21:03:22.462+0530 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-06-06T21:03:22.483+0530 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27018.sock
+2018-06-06T21:03:22.602+0530 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-06-06T21:03:22.787+0530 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-06-06T21:03:23.215+0530 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-06-06T21:03:23.216+0530 I CONTROL  [signalProcessingThread] now exiting
+2018-06-06T21:03:23.216+0530 I CONTROL  [signalProcessingThread] shutting down with code:0
+2018-06-06T22:40:46.892+0530 I CONTROL  [initandlisten] MongoDB starting : pid=1623 port=27018 dbpath=/home/jarvis/oniv/database/data/db/ 64-bit host=jarvis-PC
+2018-06-06T22:40:47.014+0530 I CONTROL  [initandlisten] db version v3.6.3
+2018-06-06T22:40:47.014+0530 I CONTROL  [initandlisten] git version: 9586e557d54ef70f9ca4b43c26892cd55257e1a5
+2018-06-06T22:40:47.014+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2d 9 Jul 2015
+2018-06-06T22:40:47.014+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-06-06T22:40:47.014+0530 I CONTROL  [initandlisten] modules: none
+2018-06-06T22:40:47.014+0530 I CONTROL  [initandlisten] build environment:
+2018-06-06T22:40:47.014+0530 I CONTROL  [initandlisten]     distmod: ubuntu1404
+2018-06-06T22:40:47.014+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2018-06-06T22:40:47.014+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-06-06T22:40:47.014+0530 I CONTROL  [initandlisten] options: { net: { port: 27018 }, storage: { dbPath: "/home/jarvis/oniv/database/data/db/" } }
+2018-06-06T22:40:47.290+0530 W -        [initandlisten] Detected unclean shutdown - /home/jarvis/oniv/database/data/db/mongod.lock is not empty.
+2018-06-06T22:40:47.295+0530 I -        [initandlisten] Detected data files in /home/jarvis/oniv/database/data/db/ created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-06-06T22:40:47.295+0530 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2018-06-06T22:40:47.295+0530 I STORAGE  [initandlisten] 
+2018-06-06T22:40:47.295+0530 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-06-06T22:40:47.295+0530 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-06-06T22:40:47.295+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1427M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-06-06T22:40:48.723+0530 I STORAGE  [initandlisten] WiredTiger message [1528305048:723363][1623:0x7fa5b74cc580], txn-recover: Main recovery loop: starting at 73/3712
+2018-06-06T22:40:48.723+0530 I STORAGE  [initandlisten] WiredTiger message [1528305048:723705][1623:0x7fa5b74cc580], txn-recover: Recovering log 73 through 74
+2018-06-06T22:40:48.830+0530 I STORAGE  [initandlisten] WiredTiger message [1528305048:830949][1623:0x7fa5b74cc580], txn-recover: Recovering log 74 through 74
+2018-06-06T22:40:49.836+0530 I CONTROL  [initandlisten] 
+2018-06-06T22:40:49.836+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-06-06T22:40:49.836+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-06-06T22:40:49.836+0530 I CONTROL  [initandlisten] 
+2018-06-06T22:40:49.836+0530 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-06-06T22:40:49.836+0530 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-06-06T22:40:49.836+0530 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-06-06T22:40:49.836+0530 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-06-06T22:40:49.836+0530 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-06-06T22:40:49.836+0530 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-06-06T22:40:49.836+0530 I CONTROL  [initandlisten] 
+2018-06-06T22:40:49.836+0530 I CONTROL  [initandlisten] 
+2018-06-06T22:40:49.836+0530 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2018-06-06T22:40:49.836+0530 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2018-06-06T22:40:49.836+0530 I CONTROL  [initandlisten] 
+2018-06-06T22:40:49.916+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/home/jarvis/oniv/database/data/db/diagnostic.data'
+2018-06-06T22:40:49.916+0530 I NETWORK  [initandlisten] waiting for connections on port 27018
+2018-06-06T22:40:50.037+0530 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2018-06-06T22:40:59.163+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55854 #1 (1 connection now open)
+2018-06-06T22:40:59.170+0530 I NETWORK  [conn1] received client metadata from 127.0.0.1:55854 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T22:40:59.180+0530 I NETWORK  [conn1] end connection 127.0.0.1:55854 (0 connections now open)
+2018-06-06T22:42:06.014+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:56304 #2 (1 connection now open)
+2018-06-06T22:42:06.020+0530 I NETWORK  [conn2] received client metadata from 127.0.0.1:56304 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T22:42:06.030+0530 I NETWORK  [conn2] end connection 127.0.0.1:56304 (0 connections now open)
+2018-06-06T22:42:33.544+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:56546 #3 (1 connection now open)
+2018-06-06T22:42:33.551+0530 I NETWORK  [conn3] received client metadata from 127.0.0.1:56546 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T22:42:33.560+0530 I NETWORK  [conn3] end connection 127.0.0.1:56546 (0 connections now open)
+2018-06-06T22:43:00.189+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:56766 #4 (1 connection now open)
+2018-06-06T22:43:00.190+0530 I NETWORK  [conn4] received client metadata from 127.0.0.1:56766 conn: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.3" }, os: { type: "Linux", name: "Deepin", architecture: "x86_64", version: "15.5" } }
+2018-06-06T22:43:06.720+0530 I NETWORK  [conn4] end connection 127.0.0.1:56766 (0 connections now open)
+2018-06-06T22:43:54.507+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:57200 #5 (1 connection now open)
+2018-06-06T22:43:54.507+0530 I NETWORK  [conn5] received client metadata from 127.0.0.1:57200 conn: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.3" }, os: { type: "Linux", name: "Deepin", architecture: "x86_64", version: "15.5" } }
+2018-06-06T22:43:55.451+0530 I NETWORK  [conn5] end connection 127.0.0.1:57200 (0 connections now open)
+2018-06-06T22:43:59.612+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:57242 #6 (1 connection now open)
+2018-06-06T22:43:59.622+0530 I NETWORK  [conn6] received client metadata from 127.0.0.1:57242 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T22:43:59.633+0530 I NETWORK  [conn6] end connection 127.0.0.1:57242 (0 connections now open)
+2018-06-06T22:46:12.396+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:58294 #7 (1 connection now open)
+2018-06-06T22:46:12.406+0530 I NETWORK  [conn7] received client metadata from 127.0.0.1:58294 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T22:46:14.158+0530 I NETWORK  [conn7] end connection 127.0.0.1:58294 (0 connections now open)
+2018-06-06T22:46:49.112+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:58586 #8 (1 connection now open)
+2018-06-06T22:46:49.121+0530 I NETWORK  [conn8] received client metadata from 127.0.0.1:58586 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T22:46:51.461+0530 I NETWORK  [conn8] end connection 127.0.0.1:58586 (0 connections now open)
+2018-06-06T22:47:49.782+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:59086 #9 (1 connection now open)
+2018-06-06T22:47:49.792+0530 I NETWORK  [conn9] received client metadata from 127.0.0.1:59086 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:00:01.330+0530 I NETWORK  [conn9] end connection 127.0.0.1:59086 (0 connections now open)
+2018-06-06T23:00:06.256+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:36748 #10 (1 connection now open)
+2018-06-06T23:00:06.273+0530 I NETWORK  [conn10] received client metadata from 127.0.0.1:36748 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:00:44.149+0530 I NETWORK  [conn10] end connection 127.0.0.1:36748 (0 connections now open)
+2018-06-06T23:00:48.711+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:37098 #11 (1 connection now open)
+2018-06-06T23:00:48.728+0530 I NETWORK  [conn11] received client metadata from 127.0.0.1:37098 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:01:30.578+0530 I NETWORK  [conn11] end connection 127.0.0.1:37098 (0 connections now open)
+2018-06-06T23:01:33.414+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:37480 #12 (1 connection now open)
+2018-06-06T23:01:33.432+0530 I NETWORK  [conn12] received client metadata from 127.0.0.1:37480 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:02:07.007+0530 I NETWORK  [conn12] end connection 127.0.0.1:37480 (0 connections now open)
+2018-06-06T23:02:36.759+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:37998 #13 (1 connection now open)
+2018-06-06T23:02:36.778+0530 I NETWORK  [conn13] received client metadata from 127.0.0.1:37998 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:02:36.849+0530 I NETWORK  [conn13] end connection 127.0.0.1:37998 (0 connections now open)
+2018-06-06T23:02:39.335+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:38024 #14 (1 connection now open)
+2018-06-06T23:02:39.367+0530 I NETWORK  [conn14] received client metadata from 127.0.0.1:38024 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:02:39.399+0530 I NETWORK  [conn14] end connection 127.0.0.1:38024 (0 connections now open)
+2018-06-06T23:02:41.891+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:38042 #15 (1 connection now open)
+2018-06-06T23:02:41.915+0530 I NETWORK  [conn15] received client metadata from 127.0.0.1:38042 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:02:41.977+0530 I NETWORK  [conn15] end connection 127.0.0.1:38042 (0 connections now open)
+2018-06-06T23:02:44.560+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:38068 #16 (1 connection now open)
+2018-06-06T23:02:44.600+0530 I NETWORK  [conn16] received client metadata from 127.0.0.1:38068 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:02:44.661+0530 I NETWORK  [conn16] end connection 127.0.0.1:38068 (0 connections now open)
+2018-06-06T23:02:47.205+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:38094 #17 (1 connection now open)
+2018-06-06T23:02:47.231+0530 I NETWORK  [conn17] received client metadata from 127.0.0.1:38094 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:02:47.284+0530 I NETWORK  [conn17] end connection 127.0.0.1:38094 (0 connections now open)
+2018-06-06T23:02:49.853+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:38112 #18 (1 connection now open)
+2018-06-06T23:02:49.881+0530 I NETWORK  [conn18] received client metadata from 127.0.0.1:38112 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:02:49.941+0530 I NETWORK  [conn18] end connection 127.0.0.1:38112 (0 connections now open)
+2018-06-06T23:02:52.391+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:38138 #19 (1 connection now open)
+2018-06-06T23:02:52.419+0530 I NETWORK  [conn19] received client metadata from 127.0.0.1:38138 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:02:52.471+0530 I NETWORK  [conn19] end connection 127.0.0.1:38138 (0 connections now open)
+2018-06-06T23:02:54.973+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:38156 #20 (1 connection now open)
+2018-06-06T23:02:54.999+0530 I NETWORK  [conn20] received client metadata from 127.0.0.1:38156 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:02:55.070+0530 I NETWORK  [conn20] end connection 127.0.0.1:38156 (0 connections now open)
+2018-06-06T23:02:57.600+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:38182 #21 (1 connection now open)
+2018-06-06T23:02:57.626+0530 I NETWORK  [conn21] received client metadata from 127.0.0.1:38182 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:02:57.670+0530 I NETWORK  [conn21] end connection 127.0.0.1:38182 (0 connections now open)
+2018-06-06T23:03:00.169+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:38200 #22 (1 connection now open)
+2018-06-06T23:03:00.195+0530 I NETWORK  [conn22] received client metadata from 127.0.0.1:38200 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:03:00.260+0530 I NETWORK  [conn22] end connection 127.0.0.1:38200 (0 connections now open)
+2018-06-06T23:03:02.787+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:38226 #23 (1 connection now open)
+2018-06-06T23:03:02.814+0530 I NETWORK  [conn23] received client metadata from 127.0.0.1:38226 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:03:02.865+0530 I NETWORK  [conn23] end connection 127.0.0.1:38226 (0 connections now open)
+2018-06-06T23:03:05.430+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:38252 #24 (1 connection now open)
+2018-06-06T23:03:05.459+0530 I NETWORK  [conn24] received client metadata from 127.0.0.1:38252 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v9.8.0, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:03:05.507+0530 I NETWORK  [conn24] end connection 127.0.0.1:38252 (0 connections now open)
+2018-06-06T23:03:14.829+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:38326 #25 (1 connection now open)
+2018-06-06T23:03:14.846+0530 I NETWORK  [conn25] received client metadata from 127.0.0.1:38326 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:03:45.711+0530 I NETWORK  [conn25] end connection 127.0.0.1:38326 (0 connections now open)
+2018-06-06T23:03:48.484+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:38600 #26 (1 connection now open)
+2018-06-06T23:03:48.501+0530 I NETWORK  [conn26] received client metadata from 127.0.0.1:38600 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:09:06.876+0530 I NETWORK  [conn26] end connection 127.0.0.1:38600 (0 connections now open)
+2018-06-06T23:09:11.644+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:41228 #27 (1 connection now open)
+2018-06-06T23:09:11.661+0530 I NETWORK  [conn27] received client metadata from 127.0.0.1:41228 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:09:50.174+0530 I NETWORK  [conn27] end connection 127.0.0.1:41228 (0 connections now open)
+2018-06-06T23:09:53.066+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:41560 #28 (1 connection now open)
+2018-06-06T23:09:53.084+0530 I NETWORK  [conn28] received client metadata from 127.0.0.1:41560 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:10:19.959+0530 I NETWORK  [conn28] end connection 127.0.0.1:41560 (0 connections now open)
+2018-06-06T23:10:22.891+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:41804 #29 (1 connection now open)
+2018-06-06T23:10:22.908+0530 I NETWORK  [conn29] received client metadata from 127.0.0.1:41804 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:11:45.187+0530 I NETWORK  [conn29] end connection 127.0.0.1:41804 (0 connections now open)
+2018-06-06T23:11:48.101+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:42504 #30 (1 connection now open)
+2018-06-06T23:11:48.118+0530 I NETWORK  [conn30] received client metadata from 127.0.0.1:42504 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:12:25.677+0530 I NETWORK  [conn30] end connection 127.0.0.1:42504 (0 connections now open)
+2018-06-06T23:12:29.986+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:42856 #31 (1 connection now open)
+2018-06-06T23:12:30.004+0530 I NETWORK  [conn31] received client metadata from 127.0.0.1:42856 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:15:48.667+0530 I NETWORK  [conn31] end connection 127.0.0.1:42856 (0 connections now open)
+2018-06-06T23:15:53.855+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:44504 #32 (1 connection now open)
+2018-06-06T23:15:53.874+0530 I NETWORK  [conn32] received client metadata from 127.0.0.1:44504 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:28:27.226+0530 I NETWORK  [conn32] end connection 127.0.0.1:44504 (0 connections now open)
+2018-06-06T23:28:36.501+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:50000 #33 (1 connection now open)
+2018-06-06T23:28:36.518+0530 I NETWORK  [conn33] received client metadata from 127.0.0.1:50000 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:30:56.680+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51164 #34 (2 connections now open)
+2018-06-06T23:31:29.831+0530 I NETWORK  [conn34] end connection 127.0.0.1:51164 (1 connection now open)
+2018-06-06T23:31:29.831+0530 I NETWORK  [conn33] end connection 127.0.0.1:50000 (0 connections now open)
+2018-06-06T23:31:43.847+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51558 #35 (1 connection now open)
+2018-06-06T23:31:43.867+0530 I NETWORK  [conn35] received client metadata from 127.0.0.1:51558 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:32:33.800+0530 I NETWORK  [conn35] end connection 127.0.0.1:51558 (0 connections now open)
+2018-06-06T23:32:36.603+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51992 #36 (1 connection now open)
+2018-06-06T23:32:36.620+0530 I NETWORK  [conn36] received client metadata from 127.0.0.1:51992 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:33:24.878+0530 I NETWORK  [conn36] end connection 127.0.0.1:51992 (0 connections now open)
+2018-06-06T23:33:29.425+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52436 #37 (1 connection now open)
+2018-06-06T23:33:29.442+0530 I NETWORK  [conn37] received client metadata from 127.0.0.1:52436 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:33:47.823+0530 I NETWORK  [conn37] end connection 127.0.0.1:52436 (0 connections now open)
+2018-06-06T23:34:51.757+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:53120 #38 (1 connection now open)
+2018-06-06T23:34:51.774+0530 I NETWORK  [conn38] received client metadata from 127.0.0.1:53120 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:35:15.101+0530 I NETWORK  [conn38] end connection 127.0.0.1:53120 (0 connections now open)
+2018-06-06T23:36:46.091+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54072 #39 (1 connection now open)
+2018-06-06T23:36:46.108+0530 I NETWORK  [conn39] received client metadata from 127.0.0.1:54072 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:36:59.620+0530 I NETWORK  [conn39] end connection 127.0.0.1:54072 (0 connections now open)
+2018-06-06T23:37:33.617+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54484 #40 (1 connection now open)
+2018-06-06T23:37:33.634+0530 I NETWORK  [conn40] received client metadata from 127.0.0.1:54484 conn: { driver: { name: "nodejs", version: "3.1.0-beta4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.14.0-deepin2-amd64" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.0-beta4" }
+2018-06-06T23:37:43.956+0530 I STORAGE  [conn40] createCollection: data.blogs with generated UUID: d55ea86f-926f-4181-8b6d-9e8932753915
+2018-06-06T23:37:44.122+0530 I COMMAND  [conn40] command data.blogs command: insert { insert: "blogs", ordered: false, lsid: { id: UUID("5b9d807b-6147-4a92-a2dd-5523389a0765") }, $db: "data" } ninserted:1 keysInserted:1 numYields:0 reslen:44 locks:{ Global: { acquireCount: { r: 5, w: 3 } }, Database: { acquireCount: { r: 1, w: 2, W: 1 } }, Collection: { acquireCount: { r: 1, w: 2 } } } protocol:op_query 166ms
+2018-06-06T23:37:51.454+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54638 #41 (2 connections now open)
+2018-06-06T23:37:51.454+0530 I NETWORK  [conn41] received client metadata from 127.0.0.1:54638 conn: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.3" }, os: { type: "Linux", name: "Deepin", architecture: "x86_64", version: "15.5" } }
+2018-06-06T23:38:52.376+0530 I CONTROL  [signalProcessingThread] got signal 1 (Hangup), will terminate after current cmd ends
+2018-06-06T23:38:52.376+0530 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-06-06T23:38:52.376+0530 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27018.sock
+2018-06-06T23:38:52.377+0530 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-06-06T23:38:52.384+0530 I NETWORK  [conn41] end connection 127.0.0.1:54638 (1 connection now open)
+2018-06-06T23:38:52.387+0530 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-06-06T23:38:52.405+0530 I NETWORK  [conn40] end connection 127.0.0.1:54484 (0 connections now open)
+2018-06-06T23:38:52.805+0530 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-06-06T23:38:52.805+0530 I CONTROL  [signalProcessingThread] now exiting
+2018-06-06T23:38:52.805+0530 I CONTROL  [signalProcessingThread] shutting down with code:0

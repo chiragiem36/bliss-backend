@@ -6,8 +6,10 @@ const express = require('express')
 const path = require('path')
 const app = express()
 const bp = require('body-parser')
+const cors = require('cors')
 
 app.use(bp.json())
+app.use(cors())
 
 app.get("/", (req, res) => {
 	res.sendFile(path.resolve("./dist/index.html"))

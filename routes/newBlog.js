@@ -6,7 +6,7 @@ const passKey = 'yOO+0V+h9zoVw6mmUzkXR+J5UdL+V73cw0q9aIkpcYJXK6wNPb5LAEeRMiPVu'
 const DB = require('./../routes/db.js')
 
 let db
-let count
+let count = 0
 
 const dbCheck = setInterval(() => {
   const x = DB.db()
@@ -14,23 +14,81 @@ const dbCheck = setInterval(() => {
     db = x
     clearInterval(dbCheck)
     db.collection('count').findOne({_id: 'last'}, (err, item) => {
+      if (err) {
+        console.error(err)
+      }
       if (item) {
-        lsB = item.count
-        console.log("LAST COUNT - ", item.count)
+        count = item.count
+        console.log("LAST COUNT - ", count)
       }
     })
   }
 }, 300)
 
 router.get("/latest", (req, res) => {
-	db.collection('blogs').findOne({_id: count}, (err, items) => {
+	db.collection('blogs').findOne({_id: count}, {_id: 1, author: 1, desc: 1}, (err, items) => {
     if (err) {
       console.err(err)
       res.status(500)
       res.end()
     }
 
-    if (items && items.length < 1) {
+    if (items && items.count > 0) {
+      res.status(200)
+      res.json(items)
+    } else {
+      res.status(404)
+      res.end()
+    }
+	})
+})
+
+router.get("/blog=:id", (req, res) => {
+	db.collection('blogs').findOne({_id: Number(req.params.id)}, (err, items) => {
+    if (err) {
+      console.err(err)
+      res.status(500)
+      res.end()
+    }
+
+    if (items && items._id) {
+      res.status(200)
+      res.json(items)
+    } else {
+      res.status(404)
+      res.end()
+    }
+	})
+})
+
+router.get("/tag=:tag", (req, res) => {
+	db.collection('blogs').findOne({tags: [req.params.tag]}, (err, items) => {
+    if (err) {
+      console.err(err)
+      res.status(500)
+      res.end()
+    }
+
+    if (items && items.count > 0) {
+      res.status(200)
+      res.json(items)
+    } else {
+      res.status(404)
+      res.end()
+    }
+	})
+})
+
+router.get("/last=:ts", (req, res) => {
+	db.collection('blogs').findOne({_id: Number(req.params.ts) - 1}, (err, items) => {
+
+    if (err) {
+      console.error(err)
+      res.status(500)
+      res.end()
+    }
+
+    if (items && items.count < 1) {
       res.status(304)
       res.end()
     } else {
@@ -40,8 +98,13 @@ router.get("/latest", (req, res) => {
 	})
 })
 
-router.get("/last=:ts", (req, res) => {
-	db.collection('blogs').findOne({_id: {$lt: Number(req.params.ts)}}, (err, items) => {
+router.post("/last=:ts&tag=:tag", (req, res) => {
+  const o = {}
+
+  o._id = {$ne: req.body.counts}
+  o.tags = req.body.tags
+
+	db.collection('blogs').findOne({_id: Number(req.params.ts) - 1}, (err, items) => {
 
     if (err) {
       console.error(err)
@@ -49,7 +112,7 @@ router.get("/last=:ts", (req, res) => {
       res.end()
     }
 
-    if (items && items.length < 1) {
+    if (items && items.count < 1) {
       res.status(304)
       res.end()
     } else {
@@ -71,8 +134,9 @@ router.post('/new', (req, res) => {
         }
 
         if (item && item._id) {
-          count += 1
+          count = count + 1
           req.body.count = count
+          req.body._id = count
           db.collection('blogs').insert(req.body)
           db.collection('count').update({_id: 'last'}, {$set: {count: count}})
           console.log("LAST COUNT - ", count)
